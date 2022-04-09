@@ -1,0 +1,239 @@
+
+*{   
+margin: 0;
+padding: 0;
+}
+
+/* HEADER */
+
+#Titulo {  /* Titulo Productos */
+    background-color: darkgreen;
+    width: 100%;
+    text-align: center;
+}
+
+section.Categorias {  /* Logo! */
+    display: flex;
+    background-color: darkgreen;
+}
+div.Logo {  /* Logo! */
+    margin-top: 0px;
+    margin-right: 410px;
+}
+
+
+#Listas {  /* Flexbox de Categorias */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+}
+
+article.Category {  /* Categorias */
+    width: 80px;
+    height: 30px;
+    background-color: green;    
+    margin: 10px;
+    border: 3.5px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.TituloSecundario {  /* Acceso a Formulario */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* FOOTER */
+
+footer {   /* Flex box Footer! */
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+
+#BotonAtras {
+    padding-left: 1220px;
+}
+
+section.Lorem {
+    background-color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;
+    height: 800px;
+    display: inline-block;
+    margin: 10px;
+    border: 3px solid black;
+    overflow-y: scroll;
+}
+
+div.Info {
+    margin-left: 15px;    
+    padding-left: 200px;
+}
+#Google {
+    padding-left: 400px;
+}
+
+#Imagen {  /* Imagen de fondo! */
+    background-image:url('../imagenes/SEG.jpg');
+    background-position: center;
+    background-size: auto;
+
+}
+
+#Info2 {
+    display: inline-block;
+    margin-top: 130px;
+    margin-left: -30px;
+    position: absolute;
+    width: 300px;
+    height: 125px;
+    border: 5px solid green;
+    text-align: center;
+    background-color:white;
+
+}
+
+#Texth2 {
+    margin-left: 10px;
+    display: inline;
+    background-color: darkgreen;
+}
+
+a:link, a:visited, a:active { 
+    text-decoration: none;
+    width: 200px;
+}
+
+table {
+    border: solid 2px black;
+    background-color: white ;
+    text-align: left;
+    border-collapse: collapse;
+    width: 99.9999%;
+    margin-bottom: 15px;
+}
+
+td {
+    border: solid 1px black;
+    padding: 20px;
+}
+
+th {
+    padding: 20px;
+    background-color: darkgreen;
+    color: white;
+    border-bottom: solid 5px black;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+tr:hover {
+    background-color: green;
+    color: white;
+}
+
+#Formulario{
+    background-color: green;
+}
+#Formulario h1, h2 {
+    text-align: center;
+    margin: 10px 500px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    background-color: darkgreen;
+    padding: 15px;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+form input {
+    width: 280px;
+    height: 35px;
+    padding: 0px 10px;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 5px;
+
+}
+
+textarea {
+    width: 280px;
+    text-align: center;
+    height: 50px;
+    resize: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form select {
+    margin-bottom: 20px;
+}
+
+form button {
+    display: block;
+    margin-left: 100px;
+    height: 30px;
+    width: 100px;
+    background-color: #141414;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+form button:hover {
+    background-color: #ccc;
+}
+
+#TituloMotores {
+    margin-top: -1px;
+    text-align: center;
+    background-color: darkgreen;
+}
+tr th {
+    border: 1px solid black;
+}
+
+#TituloCerco {
+    margin: -1px;
+    text-align: center;
+    background-color: darkgreen;
+}
+
+#TituloAlarma {
+    margin-top: 35px;   
+    text-align: center;
+    background-color: darkgreen;    
+}
+
+#TituloFooter {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+#Listas {  /* Flexbox de Categorias */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+div.Logo {  /* Logo! */
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="Stlye.css">
+</head>
+<body id="Formulario">
+    <h1>FORMULARIO DE CLIENTE</h1>
+    <h2>Datos necesarios a completar</h2>
+<br>
+    <main>
+        <form action="" target="_blank" >
+
+            <div class="NombreCliente"></div>
+                <input type="text" name="NombreCliente" id="NombreCliente" required placeholder="Nombre Completo*">
+               
+            <div class="emailCliente"></div>            
+                <input type="email" name="emailCliente" id="MailCliente" required placeholder="Email*">
+            
+            <div class="passCliente"></div>
+                <input type="password" name="Password" id="PassCliente" required placeholder="Contraseña*">
+      
+            <h4>Seleccione una opcion</h4>
+            <div class="Cliente"></div>
+                <label for="Cliente">Soy cliente</label>
+                <input type="radio" name="SoyCliente" id="Cliente">
+
+            <div class="ConsumidorFinal"></div> 
+                <label for="ConsumidorFinal">No soy cliente</label>
+                <input type="radio" name="SoyCliente" id="ConsumidorFinal">
+
+            <div class="Docs"></div>
+                <input type="file" name="Constancias" id="Docs" multiple accept=".pdf" required>
+
+            <textarea placeholder="Ingrese Texto Aqui!"></textarea>
+
+            <select name="Sucursal">
+                <option value="" hidden selected>Elije una sucursal</option>
+                <option value="ROS">Rosario</option>
+                <option value="CBA">Cordoba</option>
+                <option value="TEM">Temperley</option>
+                <option value="CEN">Florida</option>
+                <option value="GRO">General Rodriguez</option> 
+             </select>
+
+            <button type="submit"><span>Enviar!</span></button>
+
+        </form><br>
+
+        <footer>
+      
+            <h3 id="TituloFooter">Datos de contacto en redes sociales</h3>
+        <a href="www.instagram/Ejemplo" target="_blank"><img src="../imagenes/logo-minimalist-instagram.png" alt="instagram" height="50" width="80"></a>
+        <a href="www.Facebook/Ejemplo" target="_blank"><img src="../imagenes/Logo facebook.png" alt="Facebook" height="50" width="50"></a>
+        <a href="www.Twitter/Ejemplo" target="_blank"><img src="../imagenes/twitter-logo-4.png" alt="Twitter" height="50" width="60"></a>
+<br>
+            <a href="https://api.whatsapp.com/send?phone=1234567890">Envianos un Whatsapp para mas informacion!</a><br>
+
+            <span><br></span>
+
+            <span>Mails de Contacto</span>
+            <a href="mailto:Ventas-1@ejemplo.com.ar" target="_blank">Ventas-1@ejemplo.com.ar</a>
+            <a href="mailto:Ventas-2@ejemplo.com.ar" target="_blank">Ventas-2@ejemplo.com.ar</a>
+
+        </footer>
+    </main>
+    <a href="1-index.html" id="BotonAtras">Pagina</a>
+
+</body>
+</html>
