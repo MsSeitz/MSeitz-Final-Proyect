@@ -18,7 +18,6 @@ section.Categorias {  /* Logo! */
 }
 div.Logo {  /* Logo! */
     margin-top: 0px;
-    margin-right: 410px;
 }
 
 
@@ -27,6 +26,8 @@ div.Logo {  /* Logo! */
     justify-content: center;
     justify-items: center;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article.Category {  /* Categorias */
@@ -62,20 +63,26 @@ footer {   /* Flex box Footer! */
 section.Lorem {
     background-color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;
-    width: 1200px;
+    width: 80%;
     height: 800px;
-    display: inline-block;
+    display: flex;
     margin: 10px;
     border: 3px solid black;
     overflow-y: scroll;
+    justify-content: center;
+
 }
 
+
 div.Info {
-    margin-left: 15px;    
-    padding-left: 200px;
+    width: 80%;
+    align-items: center;
 }
+
 #Google {
-    padding-left: 400px;
+    margin-top: -10%;
+    margin-bottom: 5%;
+    margin-left: 70%;
 }
 
 #Imagen {  /* Imagen de fondo! */
@@ -85,12 +92,11 @@ div.Info {
 
 }
 
-#Info2 {
-    display: inline-block;
-    margin-top: 130px;
-    margin-left: -30px;
-    position: absolute;
-    width: 300px;
+#Info2 {    
+    display: grid;
+    margin-left: 40%;
+    margin-top: 10%;
+    width: 350px;
     height: 125px;
     border: 5px solid green;
     text-align: center;
@@ -99,8 +105,10 @@ div.Info {
 }
 
 #Texth2 {
+    margin-top: auto;
     margin-left: 10px;
-    display: inline;
+    display: block;
+    width: 25%;
     background-color: darkgreen;
 }
 
@@ -223,12 +231,13 @@ tr th {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 #Listas {  /* Flexbox de Categorias */
     display: flex;
     justify-content: center;
     justify-items: center;
     flex-direction: column;
+    margin-left: 20%;
 }
 
 div.Logo {  /* Logo! */
@@ -236,4 +245,60 @@ div.Logo {  /* Logo! */
     margin-right: 0px;
 }
 
+}
+
+@media (max-width: 1000px) {
+
+    #Texth2 {
+        margin-top: auto;
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: darkgreen;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    #Info2 {    
+        display: grid;
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 15%;
+        width: 350px;
+        height: 125px;
+        border: 5px solid green;
+        text-align: center;
+        background-color:white;
+    
+    }
+
+    #Google {
+        margin-top: -10%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1000px) {
+    div.TituloSecundario {  /* Acceso a Formulario */
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    footer  {   /* Flex box Footer! */
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    footer a {   /* Flex box Footer! */
+        margin-left: 10%;
+    }
 }
