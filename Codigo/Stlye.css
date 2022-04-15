@@ -37,6 +37,41 @@ article.Category {  /* Categorias */
     margin: 10px;
     border: 3.5px solid black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+article.Category::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: darkgreen;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+article.Category:hover::after {
+    top: 0;
+}
+
+
+article.Category a {
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
 }
 
 div.TituloSecundario {  /* Acceso a Formulario */
