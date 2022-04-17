@@ -337,3 +337,9 @@ div.Logo {  /* Logo! */
         margin-left: 10%;
     }
 }
+
+#BotonEnviar {
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+}
