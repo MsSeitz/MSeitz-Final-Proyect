@@ -136,7 +136,7 @@ div.Info {
     border: 5px solid green;
     text-align: center;
     background-color:white;
-
+    overflow: hidden;
 }
 
 #Texth2 {
@@ -183,11 +183,19 @@ tr:hover {
 #Formulario{
     background-color: green;
 }
-#Formulario h1, h2 {
+#Formulario h1 h2 {
     text-align: center;
+    justify-content: center;
     margin: 10px 500px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#TituloFormulario1 {
+    text-align: center;
+}
+#TituloFormulario2 {
+    text-align: center;
 }
 
 form {
@@ -308,7 +316,7 @@ div.Logo {  /* Logo! */
         border: 5px solid green;
         text-align: center;
         background-color:white;
-    
+        
     }
 
     #Google {
