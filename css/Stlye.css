@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#Titulo {
+  /* Titulo Productos */
+  background-color: darkgreen;
+  width: 100%;
+  text-align: center; }
+
+section.Categorias {
+  /* Logo! */
+  display: flex;
+  background-color: darkgreen; }
+
+div.Logo {
+  /* Logo! */
+  margin-top: 0px; }
+
+#Listas {
+  /* Flexbox de Categorias */
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto; }
+
+article.Category {
+  /* Categorias */
+  width: 80px;
+  height: 30px;
+  background-color: green;
+  margin: 10px;
+  border: 3.5px solid black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden; }
+
+article.Category::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: darkgreen;
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 0;
+  transition: .3s ease-in-out all; }
+
+article.Category:hover::after {
+  top: 0; }
+
+article.Category a {
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all; }
+
+  
+div.TituloSecundario {
+  /* Acceso a Formulario */
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+/* FOOTER */
+footer {
+  /* Flex box Footer! */
+  background-color: darkgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */ }
+
+#BotonAtras {
+  padding-left: 1220px; }
+
+section.Lorem {
+  background-color: darkgreen;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  height: 800px;
+  display: flex;
+  margin: 10px;
+  border: 3px solid black;
+  overflow-y: scroll;
+  justify-content: center; }
+
+div.Info {
+  width: 80%;
+  align-items: center; }
+
+#Google {
+  margin-top: -10%;
+  margin-bottom: 5%;
+  margin-left: 70%; }
+
+#Imagen {
+  /* Imagen de fondo! */
+  background-image: url("../imagenes/SEG.jpg");
+  background-position: center;
+  background-size: auto; }
+
+#Info2 {
+  display: grid;
+  margin-left: 40%;
+  margin-top: 10%;
+  width: 350px;
+  height: 125px;
+  border: 5px solid green;
+  text-align: center;
+  background-color: white;
+  overflow: hidden; }
+
+#Texth2 {
+  margin-top: auto;
+  margin-left: 10px;
+  display: block;
+  width: 25%;
+  background-color: darkgreen; }
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  width: 200px; }
+
+table {
+  border: solid 2px black;
+  background-color: white;
+  text-align: left;
+  border-collapse: collapse;
+  width: 99.9999%;
+  margin-bottom: 15px; }
+
+td {
+  border: solid 1px black;
+  padding: 20px; }
+
+th {
+  padding: 20px;
+  background-color: darkgreen;
+  color: white;
+  border-bottom: solid 5px black; }
+
+tr:nth-child(even) {
+  background-color: #ddd; }
+
+tr:hover {
+  background-color: green;
+  color: white; }
+
+#Formulario {
+  background-color: green; }
+
+#Formulario h1 h2 {
+  text-align: center;
+  justify-content: center;
+  margin: 10px 500px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#TituloFormulario1 {
+  text-align: center; }
+
+#TituloFormulario2 {
+  text-align: center; }
+
+form {
+  background-color: darkgreen;
+  padding: 15px;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 3px;
+  text-align: center; }
+
+form input {
+  width: 280px;
+  height: 35px;
+  padding: 0px 10px;
+  text-align: center;
+  margin: 10px 0px;
+  border-radius: 5px; }
+
+textarea {
+  width: 280px;
+  text-align: center;
+  height: 50px;
+  resize: none;
+  margin-bottom: 20px;
+  border-radius: 5px; }
+
+form select {
+  margin-bottom: 20px; }
+
+form button {
+  display: block;
+  margin-left: 100px;
+  height: 30px;
+  width: 100px;
+  background-color: #141414;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 5px; }
+
+form button:hover {
+  background-color: #ccc; }
+
+#TituloMotores {
+  margin-top: -1px;
+  text-align: center;
+  background-color: darkgreen; }
+
+tr th {
+  border: 1px solid black; }
+
+#TituloCerco {
+  margin: -1px;
+  text-align: center;
+  background-color: darkgreen; }
+
+#TituloAlarma {
+  margin-top: 35px;
+  text-align: center;
+  background-color: darkgreen; }
+
+#TituloFooter {
+  display: flex;
+  justify-content: center; }
+
+@media (max-width: 1000px) {
+  #Listas {
+    /* Flexbox de Categorias */
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-left: 20%; }
+  div.Logo {
+    /* Logo! */
+    margin-top: 0px;
+    margin-right: 0px; } }
+
+@media (max-width: 1000px) {
+  #Texth2 {
+    margin-top: auto;
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgreen; } }
+
+@media (max-width: 1000px) {
+  #Info2 {
+    display: grid;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    width: 350px;
+    height: 125px;
+    border: 5px solid green;
+    text-align: center;
+    background-color: white; }
+  #Google {
+    margin-top: -10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    width: 400px;
+    height: 400px; } }
+
+@media (max-width: 1000px) {
+  div.TituloSecundario {
+    /* Acceso a Formulario */
+    display: none; } }
+
+@media (max-width: 1000px) {
+  footer {
+    /* Flex box Footer! */
+    display: grid;
+    text-align: center;
+    justify-content: center; }
+  footer a {
+    /* Flex box Footer! */
+    margin-left: 10%; } }
+
+#BotonEnviar {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
