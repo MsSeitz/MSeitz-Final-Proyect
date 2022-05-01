@@ -4,7 +4,10 @@
     padding: 0;
     }
     
-@import "header";
+@import 'header';
+@import 'mixin';
+@import 'maps';
+@import 'extend';
 
 
     div.TituloSecundario {  /* Acceso a Formulario */
@@ -17,10 +20,7 @@
     
     footer {   /* Flex box Footer! */
         background-color: darkgreen;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* text-align: center; */
+        @include CentrarEnCaja;
     }
     
     
@@ -33,11 +33,10 @@
         font-family: Arial, Helvetica, sans-serif;
         width: 80%;
         height: 800px;
-        display: flex;
         margin: 10px;
         border: 3px solid black;
         overflow-y: scroll;
-        justify-content: center;
+        @include CentrarEnCaja;        
     
     }
     
@@ -85,12 +84,9 @@
         width: 200px;
     }
     
-    table {
-        border: solid 2px black;
-        background-color: white ;
+    table {  /*MAPS*/
         text-align: left;
         border-collapse: collapse;
-        width: 99.9999%;
         margin-bottom: 15px;
     }
     
@@ -109,12 +105,12 @@
         background-color: #ddd;
     }
     tr:hover {
-        background-color: green;
+        @include ColorFondo;
         color: white;
     }
     
     #Formulario{
-        background-color: green;
+        @include ColorFondo;
     }
     #Formulario h1 h2 {
         text-align: center;
@@ -144,20 +140,11 @@
         input {
         width: 280px;
         height: 35px;
-        padding: 0px 10px;
-        text-align: center;
+        text-align: center;        
+        padding: 0px 10px;        
         margin: 10px 0px;
         border-radius: 5px;
         }
-    }
-    
-    textarea {
-        width: 280px;
-        text-align: center;
-        height: 50px;
-        resize: none;
-        margin-bottom: 20px;
-        border-radius: 5px;
     }
     
     form {
@@ -179,6 +166,7 @@
         transition: .3s ease all;
         border-radius: 5px;
     }
+    
     form button:hover {
         background-color: #ccc;
     }
@@ -208,8 +196,7 @@
     }
     
     #TituloFooter {
-        display: flex;
-        justify-content: center;
+        @include CentrarEnCaja;
     }
     
     
@@ -235,9 +222,7 @@
             margin-top: auto;
             margin-left: 0px;
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include CentrarEnCaja;
             background-color: darkgreen;
         }
     
@@ -286,7 +271,5 @@
     }
     
     #BotonEnviar {
-        display: flex;
-        justify-content: center ;
-        text-align: center;
+        @include CentrarEnCaja;
     }

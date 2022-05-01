@@ -1,0 +1,13 @@
+$styles:(
+
+border: solid 2px black,
+color: white,
+tablewidth: 99.9999%,
+
+);
+
+table {
+    border: map-get($styles, border);
+    background-color: map-get($styles, color);
+    width: map-get($styles, tablewidth);
+}

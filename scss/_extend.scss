@@ -1,0 +1,24 @@
+#Redes {
+    background-color: darkgreen;
+    @include CentrarEnCaja;
+    flex-direction: row;
+}
+
+#FB {
+    @extend #Redes;
+    height: 70px;
+    width: 70px;
+}
+
+#TW {
+    @extend #Redes;
+    height: 70px;
+    width: 80px;
+}
+
+#IG {
+    @extend #Redes;
+    height: 70px;
+    width: 110px;
+}
+
