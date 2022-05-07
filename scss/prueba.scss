@@ -199,6 +199,10 @@
         @include CentrarEnCaja;
     }
     
+    #Tituli2Footer {
+        @include CentrarEnCaja;
+    }
+    
     
     @media (max-width: 1000px) {
     #Listas {  /* Flexbox de Categorias */
@@ -206,7 +210,8 @@
         justify-content: center;
         justify-items: center;
         flex-direction: column;
-        margin-left: 20%;
+        align-items: center;
+        margin-left: 13%;
     }
     
     div.Logo {  /* Logo! */
@@ -272,4 +277,4 @@
     
     #BotonEnviar {
         @include CentrarEnCaja;
-    }
+    } 
